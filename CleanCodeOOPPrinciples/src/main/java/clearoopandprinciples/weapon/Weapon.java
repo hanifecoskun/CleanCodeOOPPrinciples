@@ -10,10 +10,18 @@ public class Weapon {
         this.type = type;
     }
 
+    /**
+     *
+     * @return weapon type object
+     */
     public WeaponType getType() {
         return type;
     }
 
+    /**
+     *
+     * @return name of weapon
+     */
     public String getWeaponName() {
         return weaponName;
     }

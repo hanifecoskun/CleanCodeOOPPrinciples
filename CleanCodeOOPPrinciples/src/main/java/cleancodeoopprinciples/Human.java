@@ -13,10 +13,18 @@ public abstract class Human {
         this.weapon = weapon;
     }
 
+    /**
+     *
+     * @return human name
+     */
     public String getHumanName() {
         return humanName;
     }
 
+    /**
+     *
+     * @return weapon
+     */
     public Weapon getWeapon() {
         return weapon;
     }

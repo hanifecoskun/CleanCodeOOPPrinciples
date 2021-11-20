@@ -7,13 +7,14 @@ public class ClearOOPAndPrinciples {
 
     public static void main(String[] args) {
 
-        CraftsmanHuman craftsmanHuman = new CraftsmanHuman("Craftsman");
+        // Constant değerler için bir class oluşturuldu.
+        CraftsmanHuman craftsmanHuman = new CraftsmanHuman(CommonConstants.CRAFTSMAN);
 
         craftsmanHuman.craftWeapon(WeaponType.riffle);
 
         Weapon weapon = craftsmanHuman.getWeapon();
 
-        WarriorHuman warriorHuman = new WarriorHuman("Warrior", weapon);
+        WarriorHuman warriorHuman = new WarriorHuman(CommonConstants.WARRIOR, weapon);
 
         warriorHuman.useWeapon();
     }

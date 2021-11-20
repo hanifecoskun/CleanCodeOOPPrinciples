@@ -17,12 +17,10 @@ public class WarriorHuman extends Human {
     public void useWeapon() {
 
         WeaponType type = getWeapon().getType();
-        if (type == WeaponType.knife) {
+
+        // Gereksiz if blokları kaldırılmıştır.
+        if (type != null) {
             System.out.println(getWeapon().getWeaponName() + " is used by " + humanName);
-        } else if (type == WeaponType.riffle) {
-            System.out.println(getWeapon().getWeaponName() + " is used by " + humanName);
-        } else if (type == WeaponType.sword) {
-            System.out.println(getWeapon().getWeaponName() + "is used by " + humanName);
         } else {
             System.out.println("Unknown weapon!");
         }

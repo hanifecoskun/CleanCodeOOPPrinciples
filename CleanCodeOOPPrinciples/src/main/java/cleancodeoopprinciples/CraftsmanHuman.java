@@ -21,14 +21,11 @@ public class CraftsmanHuman extends Human {
     @Override
     public void craftWeapon(WeaponType type) {
 
-        String weaponName = "undefined";
+        String weaponName = CommonConstants.UNDEFINED;
 
-        if (type == WeaponType.knife) {
-            weaponName = "knife";
-        } else if (type == WeaponType.riffle) {
-            weaponName = "riffle";
-        } else if (type == WeaponType.sword) {
-            weaponName = "sword";
+        // weaponName enum dan alınacak şekilde düzenleme yapılmıştır.
+        if (type != null) {
+            weaponName = type.getName();
         }
 
         weapon = new Weapon(weaponName, type);
